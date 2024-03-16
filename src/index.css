@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Crimson+Text&family=League+Spartan:wght@200&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap');
+
+* {
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h1{
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding-bottom: 0.5rem;
+}
+.navbar{
+  background-color: #fff !important;
+}
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+}
+.navbar a{ 
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.navbar .nav-item .nav-link.active {
+  border-bottom: 2px solid#1094a9 !important;
+}
+
+.padding{
+ padding-left: 6rem;
+ padding-right: 4rem;
+
+  
+}
+
+.btn-get-started {
+  background-color: transparent;
+  border: 1px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  width: 30%;
+  letter-spacing: 2px;
+}
+.light{
+  color: #818181;
+  padding-top: 5rem;
+}
+@media (max-width: 768px) {
+  .btn-get-started {
+    width: 50%;
+   
+  }
+}
+
+.btn-get-started:disabled {
+  pointer-events: none;
+}
+
+.btn-get-started:hover {
+  color: #fff;
+  background-color: #1094a9;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn-get-started:active {
+  box-shadow: none;
+  transform: translateY(0);
+} 
+.navbar a:hover{
+  color: #1094a9;
+}
+.spacing{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.description-line{
+  size:1px;
+  color: #636262;
+}
+@media(max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .menu_active{
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+@keyframes moveLeftRight {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.animated {
+  padding-left: 2rem;
+  animation: moveLeftRight 2s infinite;
+}
